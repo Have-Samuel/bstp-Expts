@@ -5,44 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap Colors and Buttons</title>
+  <title>Bootstrap Alerts</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
- <div class="container-fluid">
-  <button type="button" class="btn btn-primary">Click Me</button>
-  <button type="button" class="btn btn-info">Click Me</button>
-  <button type="button" class="btn btn-success">Click Me</button>
-  <button type="button" class="btn btn-warning">Click Me</button>
-  <button type="button" class="btn btn-danger">Click Me</button>
-  <button type="button" class="btn btn-secondary">Click Me</button>
-  <button type="button" class="btn btn-light">Click Me</button>
-  <button type="button" class="btn btn-dark">Click Me</button>
-  <button type="button" class="btn btn-link">Click Me</button>
-  <a href="" class="btn btn-info">I am an A Tag</a>
-  <input type="button" value="Input" class="btn btn-danger">
-  <button>Ugly Duckling (no bs)</button>
-
-  <h2 class="display-4">Outline Buttons</h2>
-  <button type="button" class="btn btn-outline-primary">Click Me</button>
-  <button type="button" class="btn btn-outline-info btn-lg">Click Me</button>
-  <button type="button" class="btn btn-outline-success btn-sm">Click Me</button>
-  <button type="button" class="btn btn-outline-warning">Click Me</button>
-  <button type="button" class="btn btn-danger btn-block btn-lg">Block Level Button</button>
-
-  <button type="button" class="btn btn-outline-success btn-sm badge-pill">Click Me</button>
-  <button type="button" class="btn btn-outline-warning badge-pill">Click Me</button>
-  <button type="button" class="btn btn-outline-danger badge-pill btn-lg">Block Level Button</button>
-
-  <h3>Inbox <span class="badge badge-primary">99</span></h3>
-  <h3>Inbox <span class="badge badge-danger badge-pill">99</span></h3>
-
-  <button type="button" class="btn btn-lg btn-outline-danger">
-    Delete All <span class="badge badge-danger">10</span>
-  </button>
- </div>
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+      Watch out! You might get hurt!!!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      <h4 class="alert-heading">Hey You!</h4>
+      New Message In Your Inbox! <a href="#" class="alert-link">Check It Out</a>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h5 class="alert-heading">Heading</h5>
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">Cancel Me</span>
+      </button>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
