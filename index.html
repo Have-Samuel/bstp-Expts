@@ -5,48 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Images and Cards</title>
+  <title>Grid System Intro</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
   <div class="container">
-    <div class="card" style="width: 18rem;">
-      <img 
-        src="https://images.unsplash.com/photo-1685876539770-45e5995387db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-      </div>
+    <div class="row">
+      <div class="col-1 bg-danger">A</div>
+      <div class="col-10 bg-warning">B</div>
+      <div class="col-1 bg-info">C</div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        Featured
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
-      </div>
+    <div class="row">
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
+      <div class="col-1">A</div>
     </div>
 
-    <div class="card bg-secondary text-white">
-      <div class="card-body">
-        <h4 class="card-title">Primary Card!</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique odio
-          accusantium, deserunt eligendi consequatur, et laudantium perferendis at recusandae numquam est doloremque.
-          Commodi fugiat ipsum qui architecto nostrum quas.</p>
-      </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 bg-danger">A</div>
+      <div class="col-8 bg-warning">B</div>
+      <div class="col-2 bg-info">C</div>
     </div>
-    <div class="contaner">
-      <img class="img-fluid"
-      src="https://images.unsplash.com/photo-1685876539770-45e5995387db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-      alt="">
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 bg-danger">A</div>
+      <div class="col-8 bg-warning">B</div>
+      <div class="col-2 bg-info">C</div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-2 bg-info">1</div>
+      <div class="col-2 bg-danger">1</div>
+      <div class="col-2 bg-success">1</div>
+      <div class="col-2 bg-secondary">1</div>
+      <div class="col-2 bg-dark">1</div>
+      <div class="col-2 bg-light">1</div>
+      </div>
     </div>
   </div>
 
