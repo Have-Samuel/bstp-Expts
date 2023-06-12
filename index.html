@@ -5,85 +5,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Responsive Grid</title>
+  <title>Nested Grids</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
- <div class="container">
-  <div class="row text-center">
-    <div class="col bg-secondary">A</div>
-    <div class="col bg-light">B</div>
-    <div class="col bg-success">C</div>
-  </div>
-  <div class="row">
-    <div class="col bg-danger">D</div>
-    <div class="col bg-success">H</div>
-    <div class="col bg-warning">I</div>
-    <div class="col bg-info">E</div>
-    <div class="col bg-primary">F</div>
-    <div class="col bg-success">H</div>
-    <div class="col bg-info">I</div>
-    <div class="col bg-danger">D</div>
-    <div class="col bg-info">E</div>
-    <div class="col bg-primary">F</div>
-    <div class="col bg-success">H</div>
-    <div class="col bg-warning">I</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-secondary">
+          <div class="row">
+            <div class="col-6 bg-warning text-center text-capitalize text">
+              This is an Alert!
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-danger btn-block">OK!</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-success btn-block">GOT IT!!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="alert alert-secondary">OH NO!!</div>
+      </div>
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col">LEFT</div>
-    <div class="col col-xl-8 bg-warning">MAIN CONTENT</div>
-    <div class="col">RIGHT</div>
-  </div>
- </div>
-
- <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6 col-xl-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1545528657-6fb5eae99fff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-danger">
+          <div class="row">
+            <div class="col-6 bg-dark">
+              This is an alert!
+            </div>
+            <div class="col">
+              <button class="btn btn-info btn-block">OK</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-danger btn-block">OMG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="alert alert-danger">
+          Oh No!
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-xl-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1567450133695-72d4fbe4bd33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2704&q=80" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-xl-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1554740760-5db7aca3ec66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=785&q=80" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-xl-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1588164950715-6aa49568dd80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=40" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-        </div>
-      </div>
-  </div>
- </div>
- </div>
-
+  </div> -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
