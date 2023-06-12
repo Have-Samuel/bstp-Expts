@@ -11,79 +11,35 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row border align-items-center justify-content-center">
-      <div class="col-3">
-        <div class="card text-white bg-primary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
+  <div class="container">
+    <h1>UTILITIES</h1>
+      <h2 class="text-danger bg-dark">Hello!</h2>
+      <h2 class="text-info bg-light">Hello!</h2>
+      <h2 class="text-secondary bg-danger">Hello!</h2>
+      <h2 class="text-success bg-secondary">Hello!</h2>
+      <h2 class="text-warning bg-primary">Hello!</h2>
+
+      <div class="row justify-content-between">
+        <div class="col-3 border border-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deserunt asperiores quo placeat totam dolorum neque dicta modi nemo omnis voluptatibus expedita? Provident totam voluptates eius maiores laboriosam, atque dolores.</div>
+        <div class="col-3 border-left border-right border-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam optio illo ipsa voluptatibus, quisquam totam nulla corporis beatae architecto obcaecati a ratione cupiditate nesciunt nemo. Nam, optio. Voluptas, veritatis vero!</div>
+        <div class="col-3 border border-danger border-left-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla ab provident! Distinctio iste minus quisquam saepe sit similique repellendus excepturi ipsum iure, possimus autem pariatur mollitia dolorem porro eum.</div>
+      </div>
+        <h2 class="text-center">Rounded Borders</h2>
+      <div class="row justify-content-between">
+        <div class="col-3 border border-success rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deserunt asperiores quo placeat totam dolorum neque dicta modi nemo omnis voluptatibus expedita? Provident totam voluptates eius maiores laboriosam, atque dolores.</div>
+        <div class="col-3 border rounded-top border-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam optio illo ipsa voluptatibus, quisquam totam nulla corporis beatae architecto obcaecati a ratione cupiditate nesciunt nemo. Nam, optio. Voluptas, veritatis vero!</div>
+        <div class="col-3   ">
+          <img class="rounded-circle border border-danger" src="https://media.istockphoto.com/id/1016259670/photo/staffordshire.jpg?s=1024x1024&w=is&k=20&c=4rNHisivZ64tYySciAuTBvdYAt-6TSsDZzIDihsDpTA=" alt="">
         </div>
       </div>
-      <div class="col-3">
-        <div class="card text-white bg-info mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, perferendis amet? Suscipit impedit aliquam cum fugiat repellendus assumenda natus. Ex, veritatis vero blanditiis obcaecati consequatur ab rem iusto tempore reprehenderit?</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card text-white bg-secondary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+
+      <h3 class="display-3 no-shadow">SHADOWS</h3>
+      <h3 class="display-4 shadow"> No SHADOWS</h3>
+      <h3 class="display-4 shadow-sm">SMS SHADOWS</h3>
+      <h3 class="display-4 shadow-lg text-success"> LG SHADOWS</h3>
+      <h3 class="display-4 border border-danger rounded">BOOM  SHADOWS</h3>
   </div>
 
-  <div class="container">
-    <div class="row border align-items-center" style="height: 500px;">
-      <div class="col-3 align-self-start">
-        <div class="card text-white bg-secondary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card text-white bg-success mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card text-white bg-danger mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 align-self-end">
-        <div class="card text-white bg-info mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
