@@ -5,27 +5,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Display Utilities</title>
+  <title>Bootstrap Forms</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-  <h1 class="display-3 bg-success d-inline">I am a Heading</h1>
-  <span class="text-danger bg-warning d-block">I am a Span</span>
-  <h1 class="display-3 bg-info d-inline">Wake Up</h1>
+
   <div class="container">
-    <p class="d-lg-none bg-info">Hidden On Large Screens</p>
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h2>DISPLAYING!!!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolore natus debitis corporis fugit alias asperiores, nobis quam consequatur sit qui nemo reprehenderit accusamus dolor exercitationem provident maxime non unde.</p>
+   <div class="row justify-content-center">
+    <div class="col-md-8 col-xl-4 border mt-3 shadow p-4 mx-3 rounded">
+      <h2 class="display-3">Forms!</h2>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="col-6">
+            <label for="last-Name">Last Name</label>
+            <input id="last-Name" type="text" class="form-control" placeholder="Last Name">
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 d-none d-md-inline">
-        <img src="http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg" alt="" class="img-fluid">
+
+      <div class="form-group">
+        <label for="email">Enter Your Email</label>
+      <input type="text" id="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="email">Enter Your Email</label>
+      <input type="text" id="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="">Select a Number</label>
+      <select class="form-control" name="" id="">
+        <option >A</option>
+        <option >B</option>
+        <option >C</option>
+        <option >D</option>
+        <option >E</option>
+        <option >F</option>
+        <option >G</option>
+      </select>
+    </div>
+    <label for="price">Price</label> 
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+      <input type="text" class="form-control" placeholder="Price">
+      <div class="input-group-append">
+        <span class="input-group-text">.00</span>
       </div>
     </div>
+    <div class="form-group">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label for="customSwitch1" class="custom-control-label">I agree the Terms and Conditions</label>
+    </div>
+    </div>
+    <button class="btn btn-block btn-lg btn-info">Submit</button>
   </div>
+   </div>
+  </div>
+
+  <!-- <div class="container">
+    <h1 class="display-1">Forms!</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-xl-5 border shadow rounded p-4 mx-3 mx-md-0">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="first name">
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="last name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Enter An Email</label>
+          <input id="email" type="text" class="form-control form-control" placeholder='email'>
+        </div>
+        <div class="form-group">
+          <label for="email">Enter An Email</label>
+          <input id="email" type="text" class="form-control" placeholder='email'>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">I agree to sell my soul</label>
+          </div>
+        </div>
+        <button class="btn btn-success btn-block btn-lg">Submit</button>
+      </div>
+    </div>
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
