@@ -5,72 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nested Grids</title>
+  <title>Display Utilities</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
+  <h1 class="display-3 bg-success d-inline">I am a Heading</h1>
+  <span class="text-danger bg-warning d-block">I am a Span</span>
+  <h1 class="display-3 bg-info d-inline">Wake Up</h1>
   <div class="container">
-    <h1 class="display-1">Space Utilties</h1>
-    <div class=" mt-3 mb-3">
-      <button class="btn btn-success p-0">Hello!</button>
-      <button class="btn btn-info p-1">Hello!</button>
-      <button class="btn btn-secondary p-2">Hello!</button>
-      <button class="btn btn-danger p-3">Hello!</button>
-      <button class="btn btn-dark p-4">Hello!</button>
-      <button class="btn btn-secondary p-5">Hello!</button>
-      <button class="btn btn-warning p-3">Hello!</button>
-      <button class="btn btn-primary p-2">Hello!</button>
-      <button class="btn btn-danger p-1">Hello!</button>
-      <button class="btn btn-success p-5">Hello!</button>
-      <button class="btn btn-outline-secondary p-0 p-sm-1 p-md-2 p-lg-3 p-xl-5">I Will GROW!</button>
+    <p class="d-lg-none bg-info">Hidden On Large Screens</p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>DISPLAYING!!!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolore natus debitis corporis fugit alias asperiores, nobis quam consequatur sit qui nemo reprehenderit accusamus dolor exercitationem provident maxime non unde.</p>
       </div>
-      <h3 class="text-center text-capitalize">My Cards</h3>
-      <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et omnis vitae officia corrupti doloribus eligendi quos tempora, labore, maiores dicta? Minima unde, quae pariatur magnam vel ducimus commodi aliquam!</p>
-      <div class="row m-0 m-md-5">
-        <div class="col-lg-3">
-          <div class="card text-white bg-primary mb-3" >
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-3">
-          <div class="card text-white bg-primary mb-3" >
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card text-white bg-primary mb-3" >
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card text-white bg-primary mb-3" >
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem ullam maiores fugit voluptatum amet enim quisquam id aperiam provident atque aut, officiis inventore omnis, tempore laboriosam fugiat ad exercitationem.</p>
+      <div class="col-md-6 d-none d-md-inline">
+        <img src="http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
   </div>
-      
-    
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
