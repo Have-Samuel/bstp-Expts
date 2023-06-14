@@ -5,109 +5,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JS Components</title>
+  <title>Theming Bootstrap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="theme1.css">
 </head>
 
 <body>
-<div class="container">
-  <h1 class="display-3">JS TOOLTIPS!</h1>
-  <button class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Time is Up!!">Wakeup</button>
-  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-    Tooltip on top
-  </button>
-  <button class="btn btn-outline-primary" data-toggle="popover" data-placement="bottom" data-content="Let's See How it pops Up!!" title="POPOVERS!!">PopOver</button>
-
-  <div class="dropdown">
-    <button class="btn btn-warning dropdown-toggle" id="mydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DropDown</button>
-    <div class="dropdown-menu" aria-labelledby="mydropdown">
-      <a href="#" class="dropdown-item">Click Me!</a>
-      <a href="#" class="dropdown-item">No Click Me!</a>
-      <a href="#" class="dropdown-item"> Do Not Click Me!</a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-10">
-      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="10000">
-            <img src="https://images.unsplash.com/photo-1685703206522-9c9c0d03bce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-interval="2000">
-            <img src="https://plus.unsplash.com/premium_photo-1686090449625-16579c8ac225?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1674574124349-0928f4b2bce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleInterval" data-slide="prev" role="button">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" data-slide="next" role="button">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- <div class="container">
-    <h1 class="display-1">JS Components</h1>
-    <button class="btn btn-info" data-toggle="tooltip" data-placement="left" title="My cats are eating me!">Help
-      Me!</button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-      Tooltip on top
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <button class="btn btn-warning" data-toggle="popover" data-placement="bottom" title="My Popover!"
-      data-content="Hi this is a popover! Pretty ok right?">Popover!</button>
 
-    <div class="dropdown">
-      <button class="btn btn-danger dropdown-toggle" id="mydropdown" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">Dropdown</button>
-      <div class="dropdown-menu" aria-labelledby="mydropdown">
-        <a href="#" class="dropdown-item">Click Me</a>
-        <a href="#" class="dropdown-item">No Click Me</a>
-        <a href="#" class="dropdown-item">Do not click me</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-10">
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="10000">
-              <img
-                src="https://images.unsplash.com/photo-1576212767334-f9d27ad8e546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
-                class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="2000">
-              <img
-                src="https://images.unsplash.com/photo-1576229415350-886957126665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
-                class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1576212767334-f9d27ad8e546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
-                class="d-block w-100" alt="...">
-            </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Theming Bootstrap!</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.
+        Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Click Me</a>
+        <a href="#" class="btn btn-secondary my-2">Also Click Me</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header">Primary</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-secondary mb-3">
+          <div class="card-header">Secondary</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-header">Success</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-info mb-3">
+          <div class="card-header">Info</div>
+          <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-header">Warning</div>
+          <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-danger mb-3">
+          <div class="card-header">Danger</div>
+          <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-white bg-dark mb-3">
+          <div class="card-header">Dark</div>
+          <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3">
+        <div class="card text-dark bg-light mb-3">
+          <div class="card-header">Light</div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -118,12 +158,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-  <script>
-    $(function () {
-      $('[data-toggle="popover"]').popover();
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
+  <!--   -->
 </body>
 
 </html>
