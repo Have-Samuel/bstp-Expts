@@ -1,46 +1,78 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Font Awesome</title>
+  <title>JS Components</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
-  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 </head>
- 
+
 <body>
-  <h1 class="display-1">Key: <i class="fas fa-key"></i></h1>
-  <h1 class="display-4 text-secondary">Key: <i class="fas fa-key"></i></h1>
+<div class="container">
+  <h1 class="display-3">JS TOOLTIPS!</h1>
+  <button class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Time is Up!!">Wakeup</button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+  </button>
+  <button class="btn btn-outline-primary" data-toggle="popover" data-placement="bottom" data-content="Let's See How it pops Up!!" title="POPOVERS!!">PopOver</button>
+</div>
 
-  <button class="btn btn-info btn-lg">Twitter <i class="text-dark fab fa-twitter" aria-hidden="true"></i></button>
+  <!-- <div class="container">
+    <h1 class="display-1">JS Components</h1>
+    <button class="btn btn-info" data-toggle="tooltip" data-placement="left" title="My cats are eating me!">Help
+      Me!</button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+      Tooltip on top
+    </button>
+    <button class="btn btn-warning" data-toggle="popover" data-placement="bottom" title="My Popover!"
+      data-content="Hi this is a popover! Pretty ok right?">Popover!</button>
 
-  <div class="container">
+    <div class="dropdown">
+      <button class="btn btn-danger dropdown-toggle" id="mydropdown" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">Dropdown</button>
+      <div class="dropdown-menu" aria-labelledby="mydropdown">
+        <a href="#" class="dropdown-item">Click Me</a>
+        <a href="#" class="dropdown-item">No Click Me</a>
+        <a href="#" class="dropdown-item">Do not click me</a>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-6">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
+      <div class="col-10">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+              <img
+                src="https://images.unsplash.com/photo-1576212767334-f9d27ad8e546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img
+                src="https://images.unsplash.com/photo-1576229415350-886957126665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1576212767334-f9d27ad8e546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80"
+                class="d-block w-100" alt="...">
+            </div>
           </div>
-          <input type="text" class="form-control" placeholder="UserName">
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
-    <i class="fas fa-hippo fa-10x fa-spin text-info"></i>
-  </div>
-
-
-  <div class="fa-stack ca-2x">
-    <i class="fas fa-camera fa-stack-1x"></i>
-    <i class="fas fa-ban fa-stack-2x text-danger"></i>
-  </div>
-
+  </div> -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -50,6 +82,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>
